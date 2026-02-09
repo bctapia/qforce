@@ -25,7 +25,7 @@ class Topology(object):
         self.list = []  # atom numbers of unique atoms grouped together
         self.types = [None for _ in self.elements]  # atom types of each atom
         self.unique_atomids = []  #
-        self.atoms = np.zeros(self.n_atoms, dtype='int8')  # unique atom numbers of each atom
+        self.atoms = np.zeros(self.n_atoms, dtype='int16')  # unique atom numbers of each atom
         self.all_rigid = config.all_rigid
         #
         self._setup(qm_out)
